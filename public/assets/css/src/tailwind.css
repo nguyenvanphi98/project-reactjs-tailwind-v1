@@ -1,0 +1,27 @@
+/* ./src/tailwind.css 
+npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css
+*/
+
+@tailwind base;
+@tailwind components;
+
+.btn {
+  @apply px-4 py-2 bg-blue-600 text-white rounded;
+}
+
+@tailwind utilities;
+
+.absolute-x {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .absolute-y {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .absolute-x.absolute-y {
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
